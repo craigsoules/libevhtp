@@ -2152,7 +2152,7 @@ evhtp_unescape_string(unsigned char ** out, unsigned char * str, size_t str_len)
         } /* switch */
     }
 
-    return 0;
+    return optr - *out;
 }         /* evhtp_unescape_string */
 
 evhtp_query_t *
